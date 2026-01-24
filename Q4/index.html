@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form action="" id="Registration">
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <span class="error" id="emailError"></span>
+
+            <label for="password">Password</label>
+            <input type="password" name="pass" id="password">
+            <div class="strength">
+                <div class="strength-bar" id="strengthBar"></div>
+            </div>
+            <span class="error" id="passError"></span>
+
+            <label for="DOB">DOB</label>
+            <input type="date" name="DOB" id="DOB">
+            <span class="error" id="dobError"></span>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" name="phoneNumber" id="phoneNumber">
+            <span class="error" id="phoneError"></span>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

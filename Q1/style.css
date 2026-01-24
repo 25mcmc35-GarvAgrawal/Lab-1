@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0a2540, #133b63);
+    color: white;
+    padding: 30px 0;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    background-color: #333;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul.explore {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 15px 0;
+}
+
+nav ul.explore li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul.explore li a:hover {
+    color: green;
+    font-size: 17px;
+}
+
+.hero{
+    height: 70vh;
+    background:
+    linear-gradient(rgba(10,37,64,.7), rgba(10,37,64,.7)),
+    url(image.png) center/cover no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* CARD SECTION */
+.card {
+    max-width: 1500px;
+    margin: 50px auto;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.card-item .image img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.card-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0a2540;
+    margin: 15px 0;
+}
+
+.card-item .order {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 25px;
+    background-color: #00c2ff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.card-item .order:hover {
+    background-color: #007bb5;
+    transform:
+
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+    nav ul.explore {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
