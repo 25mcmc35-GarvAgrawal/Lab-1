@@ -1,0 +1,106 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FIXED HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* STICKY NAV BAR */
+.navbar {
+  position: sticky;
+  top: 80px;
+  background: #333;
+  z-index: 900;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+  padding: 12px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #00c2ff;
+}
+
+/* SCROLLABLE CENTER SECTION */
+.content {
+  position: relative;               /* relative positioning */
+  margin-top: 140px;
+  margin-bottom: 60px;
+  height: calc(100vh - 200px);
+  overflow-y: auto;                 /* scrollable */
+  padding: 20px;
+}
+
+/* PRODUCT GALLERY */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* CARD (BOX MODEL DEMO) */
+.card {
+  position: static;                 /* static positioning */
+  width: 250px;
+  background: white;
+  border: 2px solid #ddd;           /* border */
+  padding: 15px;                    /* padding */
+  margin: 10px;                     /* margin */
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* IMAGE BOX */
+.image-box {
+  position: relative;               /* relative positioning */
+}
+
+/* IMAGE */
+.image-box img {
+  width: 100%;
+  display: block;
+}
+
+/* OVERLAY EFFECT */
+.overlay {
+  position: absolute;               /* absolute positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+
+.image-box:hover .overlay {
+  opacity: 1;
+} 
