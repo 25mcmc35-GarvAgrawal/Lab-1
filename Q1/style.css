@@ -1,0 +1,109 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #1abc9c;
+    --background: #f4f6f7;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header span {
+    color: var(--secondary);
+}
+
+/* Navigation */
+nav {
+    background: #34495e;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 10px;
+}
+
+/* Sections */
+.about, .education, .blog-post, .comments {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin: 10px;
+    }
+}

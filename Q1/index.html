@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- SEO Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal blog of Garv Agrawal, MCA student at University of Hyderabad, sharing knowledge on web development and programming.">
+    <meta name="keywords" content="Garv Agrawal, MCA, University of Hyderabad, HTML5, CSS, Web Development Blog">
+    <meta name="author" content="Garv Agrawal">
+
+    <title>Garv Agrawal | Personal Blog</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Garv <span>Agrawal</span></h1>
+        <p>MCA Student | University of Hyderabad</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#comments">Comments</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+
+            <div class="content">
+                <p>
+                    Hello! My name is <span class="highlight">Garv Agrawal</span>.
+                    I am currently pursuing my <strong>Master of Computer Applications (MCA)</strong>
+                    from the <strong>University of Hyderabad</strong>.
+                </p>
+
+                <p>
+                    I have a strong interest in web development and programming.
+                    I enjoy learning modern technologies like HTML5, CSS, JavaScript,
+                    and backend systems. This blog documents my learning journey and
+                    helps me share knowledge with others.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <h2>Education</h2>
+
+            <div class="content">
+                <ul>
+                    <li>
+                        <strong>Bachelors of Computer Application (BCA)</strong><br>
+                        Banarsidas Chandiwala Institute of Information Technology
+                    </li>
+                    <li>
+                        <strong>Master of Computer Applications (MCA)</strong><br>
+                        University of Hyderabad
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Disqus Comments -->
+        <section id="comments" class="comments">
+            <h2>Comments</h2>
+            <div id="disqus_thread"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Garv Agrawal | MCA, University of Hyderabad</p>
+    </footer>
+
+    <!-- Disqus Script -->
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = "garv-agrawal-blog";
+        };
+
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+</body>
+</html>
