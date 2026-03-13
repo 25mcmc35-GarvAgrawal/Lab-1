@@ -13,12 +13,12 @@ const weatherReport = (city) => __awaiter(void 0, void 0, void 0, function* () {
         if (city.trim().length == 0) {
             return {
                 type: "app-error",
-                message: "City cannot be empty",
+                message: "City cannot be empty"
             };
         }
         const response = yield fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
         const data = yield response.json();
-        if (!response.ok) {
+        if (response.ok === false) {
             return {
                 type: "api-error",
                 cod: data.cod,
@@ -57,6 +57,11 @@ const getWeather = (city) => __awaiter(void 0, void 0, void 0, function* () {
         <p>Humidity: ${result.main.humidity}</p>
         <p>Weather : ${result.weather[0].description}</p>
         `;
+    }
+    else if (result.type == "api-error") {
+        display.innerHTML = `
+    <p>COD : ${result.cod}</p>
+    <p>Message : ${result.message}</p>`;
     }
     else {
         display.innerHTML = result.message;

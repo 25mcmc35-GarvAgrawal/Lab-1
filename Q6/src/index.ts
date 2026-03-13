@@ -36,8 +36,8 @@ const weatherReport = async (city: string): Promise<responseResult> => {
   try {
     if (city.trim().length == 0) {
       return {
-        type: "app-error",
-        message: "City cannot be empty",
+        type : "app-error" ,
+        message : "City cannot be empty" 
       };
     }
 
@@ -56,7 +56,7 @@ const weatherReport = async (city: string): Promise<responseResult> => {
 
     return {
       type: "success",
-      coord: data.coord,
+      coord: data.coord ,
       weather: data.weather,
       main: data.main,
       visibility: data.visibility,
@@ -93,8 +93,13 @@ const getWeather = async (city: string) => {
         <p>Humidity: ${result.main.humidity}</p>
         <p>Weather : ${result.weather[0].description}</p>
         `;
-  } else {
-    display.innerHTML = result.message;
+  } else if(result.type == "api-error") {
+   
+    display.innerHTML = `
+    <p>COD : ${result.cod}</p>
+    <p>Message : ${result.message}</p>`;
+  }else {
+    display.innerHTML = result.message ; 
   }
 
   button.disabled = false ; 

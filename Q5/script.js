@@ -22,13 +22,20 @@ const renderList = (tasks) => {
 
         completeBtn.textContent = "Complete" ; 
 
+        completeBtn.dataset.action = "complete" ; 
+
+        
+
         completeBtn.addEventListener("click" , () => {
             data.complete = !data.complete ; 
             renderList(list) ;
+            
         });
 
         const removeBtn = document.createElement("button") ; 
         removeBtn.textContent = "Remove" ; 
+
+        removeBtn.dataset.action = "remove" ; 
         removeBtn.addEventListener("click" , () => {
             list = list.filter(item => item.index != data.index) ; 
             renderList(list) ; 
@@ -38,9 +45,33 @@ const renderList = (tasks) => {
         li.appendChild(completeBtn) ;
         li.appendChild(removeBtn) ;
         ul.appendChild(li) ; 
+        
     });
-
 }
+
+// document.querySelector("#list").addEventListener("click" , (e) => {
+//     const action = e.target.dataset.action ; 
+//     if(!action){
+//         return ; 
+//     }
+
+//     const li = e.target.closest("li") ; 
+//     const taskIndex = Number(li.dataset.index) ; 
+
+//     const task = list.find((item) => item.index === taskIndex) ; 
+
+//     if(!task) return ; 
+
+//     if(action === "complete"){
+//         task.complete = !task.complete ; 
+//     }
+
+//     if(action === "remove"){
+//         list = list.filter((item) => item.index != taskIndex) ;
+//     }
+
+//     renderList(list) ; 
+// })
 
 const addTask = () => {
   const taskInput = document.getElementById("task");
