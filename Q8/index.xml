@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+
+    <book id="B001">
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <genre>Fiction</genre>
+        <price currency="USD">10.99</price>
+        <publication_date>1925-04-10</publication_date>
+    </book>
+
+    <book id="B002">
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <genre>Classic</genre>
+        <price currency="USD">12.50</price>
+        <publication_date>1960-07-11</publication_date>
+    </book>
+
+    <book id="B003">
+        <title>1984</title>
+        <author>George Orwell</author>
+        <genre>Dystopian</genre>
+        <price currency="USD">11.20</price>
+        <publication_date>1949-06-08</publication_date>
+    </book>
+
+    <book id="B004">
+        <title>Pride and Prejudice</title>
+        <author>Jane Austen</author>
+        <genre>Romance</genre>
+        <price currency="USD">9.75</price>
+        <publication_date>1813-01-28</publication_date>
+    </book>
+
+    <book id="B005">
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <genre>Fantasy</genre>
+        <price currency="USD">15.75</price>
+        <publication_date>1937-09-21</publication_date>
+    </book>
+
+    <book id="B006">
+        <title>The Catcher in the Rye</title>
+        <author>J.D. Salinger</author>
+        <genre>Fiction</genre>
+        <price currency="USD">13.40</price>
+        <publication_date>1951-07-16</publication_date>
+    </book>
+
+    <book id="B007">
+        <title>The Alchemist</title>
+        <author>Paulo Coelho</author>
+        <genre>Adventure</genre>
+        <price currency="USD">14.00</price>
+        <publication_date>1988-04-15</publication_date>
+    </book>
+
+    <book id="B008">
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <genre>Programming</genre>
+        <price currency="USD">35.99</price>
+        <publication_date>2008-08-01</publication_date>
+    </book>
+
+    <book id="B009">
+        <title>The Lord of the Rings</title>
+        <author>J.R.R. Tolkien</author>
+        <genre>Fantasy</genre>
+        <price currency="USD">25.99</price>
+        <publication_date>1954-07-29</publication_date>
+    </book>
+
+    <book id="B010">
+        <title>Harry Potter and the Sorcerer's Stone</title>
+        <author>J.K. Rowling</author>
+        <genre>Fantasy</genre>
+        <price currency="USD">18.99</price>
+        <publication_date>1997-06-26</publication_date>
+    </book>
+
+</catalog>

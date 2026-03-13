@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📚 Book Catalog</h1>
+
+    <!-- FILTER SECTION -->
+    <div class="filter-container">
+
+        <select id="genreFilter" class="filterBtn" disabled>
+            <option value="">Filter by Genre</option>
+        </select>
+
+        <select id="authorFilter" class="filterBtn" disabled>
+            <option value="">Filter by Author</option>
+        </select>
+
+        <input type="number" id="minPrice" placeholder="Min Price">
+        <input type="number" id="maxPrice" placeholder="Max Price">
+        <button id="priceFilterBtn" class="filterBtn" disabled>Filter Price</button>
+
+        <button id="resetBtn">Reset</button>
+
+    </div>
+
+    <!-- TABLE CONTAINER -->
+    <div class="table-container">
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Price</th>
+                    <th>Publication Date</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <p id="loading">Loading books...</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
