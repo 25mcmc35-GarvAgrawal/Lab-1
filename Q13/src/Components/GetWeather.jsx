@@ -5,6 +5,7 @@ const GetWeather = ({ city }) => {
   const [weather, setWeather] = useState(null);
   const [Loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   const apiKey = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
@@ -12,10 +13,12 @@ const GetWeather = ({ city }) => {
       try {
         setError(null) ; 
         setLoading(true);
+
         const res = await axios.get(
           `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`,
         );
         const data = res.data;
+
         const currentWeather = {
           city: data.name,
           temp: data.main.temp,
@@ -32,9 +35,9 @@ const GetWeather = ({ city }) => {
     }
 
     fetchWeather();
-  }, [city]);
+  }, [city]);  
 
-  if (Loading) return <p>Loading.....</p>;
+  if (Loading) return <p className="text-center font-bold ">Loading.....</p>;
   if (error) return <p className="text-center mt-6 text-red-500 font-bold">{error.message}</p>;
 
   return (
